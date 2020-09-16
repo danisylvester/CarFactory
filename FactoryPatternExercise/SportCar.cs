@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPatternExercise
 {
-    public class SportCar : Vehicle, IVehicleProperties
+    public class SportCar : Vehicle
     {
         private int numOfTires = 4;
         private int numOfSeats = 2;

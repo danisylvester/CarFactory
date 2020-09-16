@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPatternExercise
 {
-    public abstract class Vehicle : IVehicleProperties
+    public abstract class Vehicle 
     {
         public abstract int NumOfTires { get; }
         public abstract int NumSeats { get; }
@@ -21,7 +21,7 @@ namespace FactoryPatternExercise
         public void DownPayment()
         {
             decimal downPaymentDue = Price * DownPaymentPercent;
-            Console.WriteLine($"We require a ${downPaymentDue} for this {GetType()}.");
+            Console.WriteLine($"We require a down payment of ${downPaymentDue} for this {GetType().Name}.");
 
         }
     }

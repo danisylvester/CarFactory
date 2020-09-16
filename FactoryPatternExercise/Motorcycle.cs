@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FactoryPatternExercise
 {
-    public class Motorcycle : Vehicle, IVehicleProperties
+    public class Motorcycle : Vehicle
     {
         private int numOfTires = 2;
         private int numOfSeats = 1;
